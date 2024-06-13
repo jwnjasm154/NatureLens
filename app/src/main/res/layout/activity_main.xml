@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/RelativeLayout"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_nav"
+        android:layout_marginTop="0dp">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="?attr/nav_color"
+        app:itemIconTint="@color/icon_in_active"
+        app:itemTextColor="@color/icon_in_active"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/nav_menu">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nav_circle_btn"
+                android:contentDescription="@string/pick_up_image"
+                android:padding="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/scan_active" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

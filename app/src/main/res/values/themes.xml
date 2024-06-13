@@ -1,0 +1,154 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NatureLens" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.NatureLens" parent="Base.Theme.NatureLens" />
+
+    <style name="MyDarkTheme" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="bw_color">@color/white</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_nav</item>
+        <item name="colorErrorContainer">@color/backGCard</item>
+<!--        <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>-->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="background">@color/main_app</item>
+        <item name="android:windowBackground">@color/main_app</item>
+<!--        <item name="android:windowBackground">@drawable/starting_screen</item>-->
+        <item name="android:colorBackground">@color/main_app</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/card_light</item>
+        <item name="colorSecondaryVariant">@color/main_green</item>
+        <item name="colorOnSecondaryFixed">@color/main_offGray</item>
+        <item name="colorOnSecondaryFixedVariant">@color/main_cardEmpty</item>
+
+        <item name="main_app">@color/main_app</item>
+        <item name="main_cardEmpty">@color/main_cardEmpty</item>
+        <item name="main_green">@color/main_green</item>
+        <item name="main_offGray">@color/main_offGray</item>
+        <item name="nav_color">@color/nav_color</item>
+        <item name="backGCard">@color/backGCard</item>
+        <item name="cardkind">@color/cardkind</item>
+        <item name="cardkind2">@color/cardkind2</item>
+        <item name="card_light">@color/card_light</item>
+
+
+<!--        <item name="colorError">@color/mp_color_error</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+        duration. -->
+        <item name="windowSplashScreenBackground">@color/main_app</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">0</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/MyDarkTheme</item>
+    </style>
+    <style name="MyLightTheme1" parent="Theme.AppCompat.Light.DarkActionBar" >
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorErrorContainer">@color/white</item>
+        <!--        <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>-->
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="background">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <!--        <item name="android:windowBackground">@drawable/starting_screen</item>-->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondaryFixed">@color/white</item>
+        <item name="colorOnSecondaryFixedVariant">@color/white</item>
+
+        <item name="main_app">@color/white</item>
+        <item name="main_cardEmpty">@color/white</item>
+        <item name="main_green">@color/white</item>
+        <item name="main_offGray">@color/white</item>
+        <item name="nav_color">@color/white</item>
+        <item name="backGCard">@color/white</item>
+        <item name="cardkind">@color/white</item>
+        <item name="card_light">@color/white</item>
+
+
+        <!--        <item name="colorError">@color/mp_color_error</item>-->
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="MyLightTheme" parent="Theme.AppCompat.Light" >
+<!--                &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--                <item name="colorPrimary">@color/mp_color_primary</item>-->
+<!--                <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>-->
+<!--                <item name="colorPrimaryDark">@color/mp_color_primary_dark</item>-->
+<!--                &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--                <item name="colorSecondary">@color/mp_color_secondary</item>-->
+<!--                <item name="colorSecondaryVariant">@color/mp_color_secondary_variant</item>-->
+<!--                <item name="colorError">@color/mp_color_error</item>-->
+<!--                &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--                <item name="android:statusBarColor">?attr/colorPrimary</item>-->
+<!--                &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">?attr/main_nav</item>
+        <item name="colorErrorContainer">?attr/backGCard</item>
+        <!--        <item name="colorPrimaryVariant">@color/mp_color_primary_variant</item>-->
+        <item name="colorPrimaryDark">@color/main_offGray</item>
+        <item name="android:statusBarColor">@color/main_offGray</item>
+        <item name="background">?attr/main_app</item>
+        <item name="android:windowBackground">?attr/main_app</item>
+        <!--        <item name="android:windowBackground">@drawable/starting_screen</item>-->
+        <item name="android:colorBackground">?attr/main_app</item>
+        <item name="android:textColor">@color/black</item>
+<!--        <item name="android:titleTextColor">@color/black</item>-->
+
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">?attr/card_light</item>
+        <item name="colorSecondaryVariant">?attr/main_green</item>
+        <item name="colorOnSecondaryFixed">?attr/main_offGray</item>
+        <item name="colorOnSecondaryFixedVariant">?attr/main_cardEmpty</item>
+
+        <item name="cardkind">@color/cardkind_light</item>
+        <item name="cardkind2">@color/light_cardkind2</item>
+        <item name="main_nav">@color/white</item>
+        <item name="bw_color">@color/black</item>
+        <item name="main_app">@color/white</item>
+        <item name="main_cardEmpty">#F5F5F5</item>
+        <item name="main_green">@color/main_green</item>
+        <item name="main_offGray">#F5F5F5</item>
+        <item name="nav_color">@color/white</item>
+        <item name="backGCard">#F5F5F5</item>
+        <item name="card_light">#F5F5F5</item>
+
+
+        <!--        <item name="colorError">@color/mp_color_error</item>-->
+        <!-- Status bar color. -->
+<!--        <item name="android:statusBarColor">?attr/colorPrimary</item>-->
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
