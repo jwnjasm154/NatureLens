@@ -4,7 +4,9 @@ Welcome to the NatureLens Application project! This project, developed as part o
 
 ## Table of Contents
 - [Overview](#Overview)
-- [Features](#features)
+- [Features](#Features)
+- [Installation](#Installation)
+- [Usage](#Usage)
 - [Project Structure](#project-structure)
 
 ## Overview
@@ -16,19 +18,63 @@ This project involves training a model using MediaPipe to recognize various plan
 - **Plant Recognition**: Identifies plants using a trained model.
 - **Information Display**: Provides simple information about the identified plant.
 
+## Installation
+
+### Prerequisites
+
+- Python 3.8+
+- Android Studio
+- Kotlin
+
+### Setting Up the Environment
+
+1. *Clone the Repository*
+    ```bash
+    git clone https://github.com/jwnjasm154/NatureLens.git
+    cd NatureLens
+    ```
+
+2. *Setting Up Python Environment*
+     ```bash
+    pip install -r Model/requirements.txt
+    ```
+
+3. *Setting Up Android Environment*
+    - Open the **application** folder in Android Studio.
+    - Build the project to download all necessary dependencies.
+
+## Usage
+
+### Training the Model
+
+1. *Run the N_Model.py Script *
+    ```bash
+    python N_Model.py
+    ```
+
+### Running the Application
+
+1. *Deploy to Android Device*
+    - Connect your Android device via USB.(or used virtual devices in Android Studio.)
+    - In Android Studio, run the application on your device.
+
 ## Project Structure
 
 ```bash
 NatureLens/
-├── application/                         # Kotlin code for the Android application
-├── plant_model_50_100ttv_20/            # trained model
-├── Data/                                # Dataset used
-├── NatureLens Documention.pdf           # Project documents
-├── Presentation.pptx                    # Project Presentation
-├── demo_video.mp4                       # Demo video of the application
-├── transformation.py                    # Script for generating images from dataset
-├── train_model.py                       # Script for training the model
-└── README.md                            # Project README file
+├── application/                             # Kotlin code for the Android application
+├── Model/                                   
+│   ├── Data/                                # Dataset used
+│   ├── plant_model_50_100ttv_20/            # trained model
+│   ├── N_Model.py                           # Script for training the model
+│   ├── transformationn.py                   # Script for generating images from dataset                                      
+│   └── requirements.txt                     
+├── apk/                                     
+│   └── NatureLens.apk                       
+├── NatureLens Documention.pdf               # Project documents
+├── Presentation.pptx                        # Project Presentation
+├── demo_video.mp4                           # Demo video of the application
+└── README.md                                
 ```
 ---
 
