@@ -47,7 +47,7 @@ This project involves training a model using MediaPipe to recognize various plan
 
 ### Training the Model
 
-1. *Run the N_Model.py Script *
+1. *Run the N_Model.py Script*
     ```bash
     python N_Model.py
     ```
