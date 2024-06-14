@@ -5,9 +5,9 @@ assert tf.__version__.startswith('2')
 from mediapipe_model_maker import image_classifier
 tf.config.list_physical_devices('GPU')
 
-image_train = 'D:/Train100_(3)/train'
-image_test= 'D:/Train100_(3)/test'
-image_val = 'D:/Train100_(3)/val'
+image_train = 'Data/test'
+image_test= 'Data/test'
+image_val = 'Data/val'
 
 labels = []
 for i in os.listdir(image_train):
