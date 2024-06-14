@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.LiveFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/flashopen"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/baseline_bolt_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/view_finder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:scaleType="fillStart">
+
+            </androidx.camera.view.PreviewView>
+
+            <TextView
+                android:id="@+id/liveResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                tools:text="agfdzzgfzgzdf" />
+
+            <TextView
+                android:id="@+id/liveResult1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                tools:text="agfdzzgfzgzdf" />
+
+            <TextView
+                android:id="@+id/liveResult2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:paddingStart="10dp"
+                android:textSize="20sp"
+                tools:text="agfdzzgfzgzdf" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
